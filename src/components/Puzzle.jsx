@@ -107,7 +107,7 @@ const Puzzle = ({ onComplete }) => {
                   ${isSolved ? 'border-none' : ''}
                 `}
                                 style={{
-                                    backgroundImage: `url('/images/puzzle.jpg')`,
+                                    backgroundImage: `url('${import.meta.env.BASE_URL}images/puzzle.jpg')`,
                                     backgroundSize: '300% 300%',
                                     backgroundPosition: `${col * 50}% ${row * 50}%`,
                                 }}

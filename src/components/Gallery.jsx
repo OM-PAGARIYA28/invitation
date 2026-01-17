@@ -5,12 +5,12 @@ const Gallery = () => {
     const [revealed, setRevealed] = useState(false);
 
     const images = [
-        '/images/memories-1.jpg',
-        '/images/memories-2.jpg',
-        '/images/memories-3.jpg',
-        '/images/memories-4.jpg',
-        '/images/memories-5.jpg',
-    ];
+        'memories-1.jpg',
+        'memories-2.jpg',
+        'memories-3.jpg',
+        'memories-4.jpg',
+        'memories-5.jpg',
+    ].map(img => `${import.meta.env.BASE_URL}images/${img}`);
 
     return (
         <div className="min-h-screen bg-neutral-900 text-white py-20 px-4 flex flex-col items-center">

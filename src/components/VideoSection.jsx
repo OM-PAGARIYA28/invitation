@@ -17,7 +17,7 @@ const VideoSection = () => {
                     loop
                     playsInline
                 >
-                    <source src="/videos/second-video.mov" />
+                    <source src={`${import.meta.env.BASE_URL}videos/second-video.mov`} />
                     Your browser does not support the video tag.
                 </video>
             </div>
