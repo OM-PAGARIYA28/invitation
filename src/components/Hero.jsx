@@ -75,7 +75,7 @@ const Hero = ({ isLocked }) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 1 }}
-                    className="absolute bottom-10 flex flex-col items-center gap-2 cursor-pointer"
+                    className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer"
                     onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
                 >
                     <p className="text-gray-400 text-sm uppercase tracking-[0.2em] animate-pulse">Scroll to Enter</p>

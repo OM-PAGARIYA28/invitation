@@ -143,6 +143,19 @@ const Puzzle = ({ onComplete }) => {
                     Tap two pieces to swap them
                 </p>
             )}
+
+            {isSolved && (
+                <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1, repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
+                    className="mt-8 flex flex-col items-center gap-2 cursor-pointer"
+                    onClick={() => window.scrollTo({ top: window.innerHeight * 2, behavior: 'smooth' })}
+                >
+                    <p className="text-yellow-400 text-sm uppercase tracking-widest font-bold">Scroll Down to Explore</p>
+                    <div className="text-2xl text-yellow-400">↓</div>
+                </motion.div>
+            )}
         </div>
     );
 };
