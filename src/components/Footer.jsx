@@ -13,7 +13,7 @@ const Footer = () => {
             >
                 <h3 className="text-3xl font-light mb-4">Save the Date</h3>
                 <h2 className="text-5xl md:text-8xl font-black mb-6 tracking-tight text-yellow-300 drop-shadow-lg">
-                    01 / 01 / 2026
+                    01 / 02 / 2026
                 </h2>
                 <p className="text-2xl mb-12 font-medium">Dhamni Yatra</p>
 
